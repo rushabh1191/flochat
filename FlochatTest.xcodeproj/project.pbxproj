@@ -14,6 +14,16 @@
 		9B75F3EC201F8DE600CFC3FE /* FlochatTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B75F3EA201F8DE600CFC3FE /* FlochatTest.xcdatamodeld */; };
 		9B75F3EE201F8DE600CFC3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B75F3ED201F8DE600CFC3FE /* Assets.xcassets */; };
 		9B75F3F1201F8DE600CFC3FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B75F3EF201F8DE600CFC3FE /* LaunchScreen.storyboard */; };
+		9B75F3FB201F96A100CFC3FE /* ThemeStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75F3F9201F96A000CFC3FE /* ThemeStyler.swift */; };
+		9B75F3FC201F96A100CFC3FE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75F3FA201F96A000CFC3FE /* Colors.swift */; };
+		9B75F401201F96C600CFC3FE /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75F3FE201F96C600CFC3FE /* ViewControllerExtension.swift */; };
+		9B75F402201F96C600CFC3FE /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75F3FF201F96C600CFC3FE /* ViewExtension.swift */; };
+		9B75F403201F96C600CFC3FE /* GeneralExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75F400201F96C600CFC3FE /* GeneralExtension.swift */; };
+		9B75F40C201F986900CFC3FE /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75F408201F986900CFC3FE /* ApiCall.swift */; };
+		9B75F40D201F986900CFC3FE /* NetworkExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75F409201F986900CFC3FE /* NetworkExtensions.swift */; };
+		9B75F40F201F995D00CFC3FE /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75F40E201F995C00CFC3FE /* ErrorResponse.swift */; };
+		9B75F412201F9A2E00CFC3FE /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75F411201F9A2E00CFC3FE /* UserDefaultsHelper.swift */; };
+		9B75F414201F9AB100CFC3FE /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75F413201F9AB100CFC3FE /* ProgressIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		9B75F3ED201F8DE600CFC3FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B75F3F0201F8DE600CFC3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B75F3F2201F8DE600CFC3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B75F3F9201F96A000CFC3FE /* ThemeStyler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeStyler.swift; sourceTree = "<group>"; };
+		9B75F3FA201F96A000CFC3FE /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		9B75F3FE201F96C600CFC3FE /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		9B75F3FF201F96C600CFC3FE /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		9B75F400201F96C600CFC3FE /* GeneralExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralExtension.swift; sourceTree = "<group>"; };
+		9B75F408201F986900CFC3FE /* ApiCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
+		9B75F409201F986900CFC3FE /* NetworkExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkExtensions.swift; sourceTree = "<group>"; };
+		9B75F40E201F995C00CFC3FE /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		9B75F411201F9A2E00CFC3FE /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		9B75F413201F9AB100CFC3FE /* ProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
 		9CCA6BAD104BADE084293D16 /* Pods_FlochatTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlochatTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89B6CD4026A3770BC4ED229 /* Pods-FlochatTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlochatTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlochatTest/Pods-FlochatTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +94,11 @@
 			children = (
 				9B75F3E3201F8DE600CFC3FE /* AppDelegate.swift */,
 				9B75F3E5201F8DE600CFC3FE /* ViewController.swift */,
+				9B75F404201F986900CFC3FE /* network */,
+				9B75F3FD201F96C600CFC3FE /* extensions */,
+				9B75F413201F9AB100CFC3FE /* ProgressIndicator.swift */,
+				9B75F3F8201F96A000CFC3FE /* theme */,
+				9B75F410201F9A2E00CFC3FE /* sessionmanager */,
 				9B75F3E7201F8DE600CFC3FE /* Main.storyboard */,
 				9B75F3ED201F8DE600CFC3FE /* Assets.xcassets */,
 				9B75F3EF201F8DE600CFC3FE /* LaunchScreen.storyboard */,
@@ -81,6 +106,52 @@
 				9B75F3EA201F8DE600CFC3FE /* FlochatTest.xcdatamodeld */,
 			);
 			path = FlochatTest;
+			sourceTree = "<group>";
+		};
+		9B75F3F8201F96A000CFC3FE /* theme */ = {
+			isa = PBXGroup;
+			children = (
+				9B75F3F9201F96A000CFC3FE /* ThemeStyler.swift */,
+				9B75F3FA201F96A000CFC3FE /* Colors.swift */,
+			);
+			name = theme;
+			path = ../../Pneumics/Pneumics/theme;
+			sourceTree = "<group>";
+		};
+		9B75F3FD201F96C600CFC3FE /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9B75F3FE201F96C600CFC3FE /* ViewControllerExtension.swift */,
+				9B75F3FF201F96C600CFC3FE /* ViewExtension.swift */,
+				9B75F400201F96C600CFC3FE /* GeneralExtension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		9B75F404201F986900CFC3FE /* network */ = {
+			isa = PBXGroup;
+			children = (
+				9B75F405201F986900CFC3FE /* response */,
+				9B75F408201F986900CFC3FE /* ApiCall.swift */,
+				9B75F409201F986900CFC3FE /* NetworkExtensions.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		9B75F405201F986900CFC3FE /* response */ = {
+			isa = PBXGroup;
+			children = (
+				9B75F40E201F995C00CFC3FE /* ErrorResponse.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		9B75F410201F9A2E00CFC3FE /* sessionmanager */ = {
+			isa = PBXGroup;
+			children = (
+				9B75F411201F9A2E00CFC3FE /* UserDefaultsHelper.swift */,
+			);
+			path = sessionmanager;
 			sourceTree = "<group>";
 		};
 		B11278B39A9C9F89BF43AC34 /* Frameworks */ = {
@@ -230,8 +301,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B75F40D201F986900CFC3FE /* NetworkExtensions.swift in Sources */,
 				9B75F3E6201F8DE600CFC3FE /* ViewController.swift in Sources */,
+				9B75F3FC201F96A100CFC3FE /* Colors.swift in Sources */,
+				9B75F414201F9AB100CFC3FE /* ProgressIndicator.swift in Sources */,
+				9B75F401201F96C600CFC3FE /* ViewControllerExtension.swift in Sources */,
+				9B75F40C201F986900CFC3FE /* ApiCall.swift in Sources */,
+				9B75F402201F96C600CFC3FE /* ViewExtension.swift in Sources */,
+				9B75F412201F9A2E00CFC3FE /* UserDefaultsHelper.swift in Sources */,
+				9B75F403201F96C600CFC3FE /* GeneralExtension.swift in Sources */,
 				9B75F3E4201F8DE600CFC3FE /* AppDelegate.swift in Sources */,
+				9B75F40F201F995D00CFC3FE /* ErrorResponse.swift in Sources */,
+				9B75F3FB201F96A100CFC3FE /* ThemeStyler.swift in Sources */,
 				9B75F3EC201F8DE600CFC3FE /* FlochatTest.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
