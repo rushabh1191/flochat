@@ -97,6 +97,8 @@
                     <connections>
                         <outlet property="btnAction" destination="9qE-RR-SZF" id="iba-Tq-jqF"/>
                         <outlet property="btnChangeAction" destination="6B9-yv-5M2" id="6sS-vF-QQm"/>
+                        <outlet property="tfPassword" destination="8Yy-KA-N9t" id="D34-Cd-uTI"/>
+                        <outlet property="tfUsername" destination="sYs-mY-R6I" id="Too-Vf-ZIg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

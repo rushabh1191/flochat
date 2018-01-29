@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
@@ -16,6 +17,10 @@ class ViewController: UIViewController {
     let signupText="SIGN-UP"
     @IBOutlet weak var btnChangeAction: UIButton!
     @IBOutlet weak var btnAction: UIButton!
+    
+    @IBOutlet weak var tfUsername: UITextField!
+    @IBOutlet weak var tfPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setLoginAction()
@@ -24,8 +29,15 @@ class ViewController: UIViewController {
         btnChangeAction.setTitleColor(UIColor.white, for: UIControlState.normal)
         btnAction.setTitleColor(UIColor.white, for: UIControlState.normal)
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.view.isUserInteractionEnabled=true
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
     }
 
+    @objc func dismissKeyboard(){
+        tfUsername.resignFirstResponder()
+        tfPassword.resignFirstResponder()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -34,6 +46,19 @@ class ViewController: UIViewController {
     @IBAction func performAction(_ sender: Any) {
     }
     
+    func loginUser(){
+        let userInfo=UserInfo()
+        let context=getCoreDataContext()
+        
+        
+        let query:NSFetchRequest<UserInfo>=UserInfo.fetchRequest()
+//        query.na
+        
+    }
+    
+    func reigsterUser(){
+        
+    }
     @IBAction func changeAction(_ sender: Any) {
         if(isLogin){
             setSignupAction()
