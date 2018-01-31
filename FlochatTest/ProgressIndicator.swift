@@ -2,7 +2,7 @@
 //  ProgressIndicator.swift
 //  retailerapp
 //
-//  Created by Rushabh Bhatt on 02/05/17.
+// 
 //  Copyright © 2017 Rushabh Bhatt. All rights reserved.
 //
 

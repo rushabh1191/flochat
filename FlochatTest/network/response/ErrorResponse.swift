@@ -2,7 +2,6 @@
 //  ErrorResponse.swift
 //  retailerapp
 //
-//  Created by Rushabh Bhatt on 29/04/17.
 //  Copyright © 2017 Rushabh Bhatt. All rights reserved.
 //
 

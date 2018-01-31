@@ -2,7 +2,7 @@
 //  ViewExtensions.swift
 //  Pneumics
 //
-//  Created by Rushabh Bhatt on 29/11/17.
+//  
 //  Copyright © 2017 IPS Group. All rights reserved.
 //
 

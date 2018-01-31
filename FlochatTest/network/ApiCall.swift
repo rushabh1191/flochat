@@ -2,7 +2,7 @@
 //  ApiCall.swift
 //  retailerapp
 //
-//  Created by Rushabh Bhatt on 28/04/17.
+// 
 //  Copyright © 2017 Rushabh Bhatt. All rights reserved.
 //
 
