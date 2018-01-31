@@ -1,6 +1,6 @@
 # flochat
 ```
-- pod install*
+- pod install
 - open flotchat.xcworkspace*
 
 ```
