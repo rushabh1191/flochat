@@ -44,19 +44,89 @@ class ViewController: UIViewController {
     }
 
     @IBAction func performAction(_ sender: Any) {
+        if(isLogin){
+            loginUser()
+        }else{
+            registerUser()
+        }
     }
     
     func loginUser(){
-        let userInfo=UserInfo()
-        let context=getCoreDataContext()
+    
+        let validityInfo=isValid()
         
+        if(validityInfo.isValid){
+            let context=getCoreDataContext()
+            let userInfo=UserInfo(context: context)
         
-        let query:NSFetchRequest<UserInfo>=UserInfo.fetchRequest()
-//        query.na
+            let fetchRequest:NSFetchRequest<UserInfo>=UserInfo.fetchRequest()
+    
+            print(validityInfo.username)
+            
+            fetchRequest.predicate=NSPredicate(format: "username==%@", validityInfo.username)
+            fetchRequest.fetchLimit=1
+            do{
+                let result=try context.fetch(fetchRequest)
+                if(result.count==0){
+                    self.showAlert(message: "User does not exist")
+                }else{
+                    let user=result[0]
+                    if(user.password==validityInfo.password){
+                        self.sessionManager?.setUserLoggedIn(isLoggedIn: true)
+                    }else{
+                        self.showAlert(message: "Password is invalid ")
+                    }
+                }
+            }catch let error as NSError{
+                print(error)
+            }
+            
+        }
+    
+
         
     }
     
-    func reigsterUser(){
+    func isValid()->(isValid:Bool,username:String,password:String){
+        var isValid:Bool=true
+        if(tfUsername.text!.trim().count==0){
+            showAlert(message:"Username can not be blank")
+            isValid=false
+        }
+        
+        if(tfPassword.text!.trim().count==0){
+            showAlert(message:"Password can not be blank")
+            isValid=false
+        }
+        
+        return (isValid:isValid,username:tfUsername.text!.trim(),password:tfPassword.text!.trim())
+    }
+    
+    
+    func registerUser(){
+    
+        
+        let validityInfo=isValid()
+        if(validityInfo.isValid){
+            let context=getCoreDataContext()
+            context.mergePolicy=NSErrorMergePolicy
+            let userInfo=UserInfo(context: context)
+            userInfo.username=validityInfo.username
+            userInfo.password=validityInfo.password
+        
+            do{
+                    try context.save()
+                showAlert(message: "User registered")
+            }catch{
+                // assuming error for test
+                showAlert(message: "User already exist")
+            }
+            
+            
+        }
+        
+        
+        
         
     }
     @IBAction func changeAction(_ sender: Any) {

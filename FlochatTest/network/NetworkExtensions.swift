@@ -69,7 +69,6 @@ extension ObservableType{
 
 
                 let jsonArray = d.1 as! [[String:Any]]
-                print(jsonArray)
                    let  listOfObjets=Mapper<T>().mapArray(JSONArray : jsonArray)
                 
                 

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		40FE97D5638EC87847E13FAC /* Pods_FlochatTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCA6BAD104BADE084293D16 /* Pods_FlochatTest.framework */; };
+		9B26439A2021FA0200262671 /* UIListOfFoodCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2643982021FA0100262671 /* UIListOfFoodCollection.swift */; };
+		9B26439B2021FA0200262671 /* UIListOfFoodCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2643992021FA0100262671 /* UIListOfFoodCollection.xib */; };
+		9B26439F2021FAEB00262671 /* UICellFoodCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26439D2021FAEB00262671 /* UICellFoodCollectionItem.swift */; };
+		9B2643A02021FAEB00262671 /* UICellFoodCollectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B26439E2021FAEB00262671 /* UICellFoodCollectionItem.xib */; };
+		9B2643A22021FB7700262671 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2643A12021FB7700262671 /* FoodModel.swift */; };
+		9B2643A52021FE9000262671 /* EmptyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2643A42021FE9000262671 /* EmptyRequest.swift */; };
 		9B75F3E4201F8DE600CFC3FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75F3E3201F8DE600CFC3FE /* AppDelegate.swift */; };
 		9B75F3E6201F8DE600CFC3FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75F3E5201F8DE600CFC3FE /* ViewController.swift */; };
 		9B75F3E9201F8DE600CFC3FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B75F3E7201F8DE600CFC3FE /* Main.storyboard */; };
@@ -28,6 +34,12 @@
 
 /* Begin PBXFileReference section */
 		39835560EEB941C09197CF4A /* Pods-FlochatTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlochatTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlochatTest/Pods-FlochatTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9B2643982021FA0100262671 /* UIListOfFoodCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIListOfFoodCollection.swift; sourceTree = "<group>"; };
+		9B2643992021FA0100262671 /* UIListOfFoodCollection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIListOfFoodCollection.xib; sourceTree = "<group>"; };
+		9B26439D2021FAEB00262671 /* UICellFoodCollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICellFoodCollectionItem.swift; sourceTree = "<group>"; };
+		9B26439E2021FAEB00262671 /* UICellFoodCollectionItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UICellFoodCollectionItem.xib; sourceTree = "<group>"; };
+		9B2643A12021FB7700262671 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		9B2643A42021FE9000262671 /* EmptyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyRequest.swift; sourceTree = "<group>"; };
 		9B75F3E0201F8DE600CFC3FE /* FlochatTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlochatTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B75F3E3201F8DE600CFC3FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B75F3E5201F8DE600CFC3FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +83,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9B26439C2021FA9100262671 /* foodcollection */ = {
+			isa = PBXGroup;
+			children = (
+				9B2643982021FA0100262671 /* UIListOfFoodCollection.swift */,
+				9B2643992021FA0100262671 /* UIListOfFoodCollection.xib */,
+				9B26439D2021FAEB00262671 /* UICellFoodCollectionItem.swift */,
+				9B26439E2021FAEB00262671 /* UICellFoodCollectionItem.xib */,
+				9B2643A12021FB7700262671 /* FoodModel.swift */,
+			);
+			path = foodcollection;
+			sourceTree = "<group>";
+		};
+		9B2643A32021FE8300262671 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				9B2643A42021FE9000262671 /* EmptyRequest.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
 		9B75F3D7201F8DE600CFC3FE = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +124,7 @@
 		9B75F3E2201F8DE600CFC3FE /* FlochatTest */ = {
 			isa = PBXGroup;
 			children = (
-				9B97D7C82021B3C1000C2FCA /* New Group */,
+				9B26439C2021FA9100262671 /* foodcollection */,
 				9B75F3E3201F8DE600CFC3FE /* AppDelegate.swift */,
 				9B75F3E5201F8DE600CFC3FE /* ViewController.swift */,
 				9B75F404201F986900CFC3FE /* network */,
@@ -132,6 +164,7 @@
 		9B75F404201F986900CFC3FE /* network */ = {
 			isa = PBXGroup;
 			children = (
+				9B2643A32021FE8300262671 /* request */,
 				9B75F405201F986900CFC3FE /* response */,
 				9B75F408201F986900CFC3FE /* ApiCall.swift */,
 				9B75F409201F986900CFC3FE /* NetworkExtensions.swift */,
@@ -153,13 +186,6 @@
 				9B75F411201F9A2E00CFC3FE /* UserDefaultsHelper.swift */,
 			);
 			path = sessionmanager;
-			sourceTree = "<group>";
-		};
-		9B97D7C82021B3C1000C2FCA /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		B11278B39A9C9F89BF43AC34 /* Frameworks */ = {
@@ -233,7 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B75F3F1201F8DE600CFC3FE /* LaunchScreen.storyboard in Resources */,
+				9B2643A02021FAEB00262671 /* UICellFoodCollectionItem.xib in Resources */,
 				9B75F3EE201F8DE600CFC3FE /* Assets.xcassets in Resources */,
+				9B26439B2021FA0200262671 /* UIListOfFoodCollection.xib in Resources */,
 				9B75F3E9201F8DE600CFC3FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,12 +339,16 @@
 			files = (
 				9B75F40D201F986900CFC3FE /* NetworkExtensions.swift in Sources */,
 				9B75F3E6201F8DE600CFC3FE /* ViewController.swift in Sources */,
+				9B26439F2021FAEB00262671 /* UICellFoodCollectionItem.swift in Sources */,
+				9B2643A22021FB7700262671 /* FoodModel.swift in Sources */,
 				9B97D7C52021B39C000C2FCA /* ThemeStyler.swift in Sources */,
 				9B97D7C72021B3AD000C2FCA /* Colors.swift in Sources */,
 				9B75F414201F9AB100CFC3FE /* ProgressIndicator.swift in Sources */,
 				9B75F401201F96C600CFC3FE /* ViewControllerExtension.swift in Sources */,
 				9B75F40C201F986900CFC3FE /* ApiCall.swift in Sources */,
+				9B2643A52021FE9000262671 /* EmptyRequest.swift in Sources */,
 				9B75F402201F96C600CFC3FE /* ViewExtension.swift in Sources */,
+				9B26439A2021FA0200262671 /* UIListOfFoodCollection.swift in Sources */,
 				9B75F412201F9A2E00CFC3FE /* UserDefaultsHelper.swift in Sources */,
 				9B75F403201F96C600CFC3FE /* GeneralExtension.swift in Sources */,
 				9B75F3E4201F8DE600CFC3FE /* AppDelegate.swift in Sources */,

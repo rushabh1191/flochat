@@ -139,6 +139,11 @@ extension UIViewController{
         return (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     }
     
+    func showAlert(message:String){
+        self.showAlert(message: message, title:"Alert")
+    }
+
+    
     func showAlert(message:String,title:String,alertActions:Array<UIAlertAction>){
         let alert = UIAlertController(title: title, message: message,
                                       preferredStyle: UIAlertControllerStyle.alert)
@@ -149,6 +154,14 @@ extension UIViewController{
         self.present(alert, animated: true, completion: nil)
         
     }
+    func showAlert(message:String,title:String){
+        let alert = UIAlertController(title: title, message: message,
+                                      preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
     
     func handlerError(error:Error){
         self.hideProgressIndicator()
