@@ -16,7 +16,7 @@ import ObjectMapper
 
 class EndPoint{
 
-    static let appUrl="http://35.154.75.20:9090/"
+    static let appUrl="http://35.154.75.20.xip.io:9090/"
     static let foodItems="test/ios"
 
 }
@@ -52,6 +52,7 @@ class ApiCall{
 
     func callApi<T:Mappable>(method:HTTPMethod,url:String,
                  responseType:T.Type)->Observable<T>{
+        
         let requestInformation=prepareRequestData(url: url)
         let request : Observable<T> = RxAlamofire.requestJSON(method, requestInformation.url,parameters: [:],
                                                               encoding: JSONEncoding.default,
