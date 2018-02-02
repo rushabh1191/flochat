@@ -47,6 +47,9 @@ class UIListOfFoodCollection: UIViewController,UITableViewDataSource,UITableView
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UICellFoodCollectionItem.height
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell=tableView.dequeueReusableCell(withIdentifier: UICellFoodCollectionItem.getClassName(), for: indexPath) as! UICellFoodCollectionItem

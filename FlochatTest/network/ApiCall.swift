@@ -15,8 +15,8 @@ import ObjectMapper
 
 
 class EndPoint{
-    static let appUrl="https://api.myjson.com/bins/"
-    static let foodItems="9wn11"
+    static let appUrl="https://api.jsonbin.io/b/"
+    static let foodItems="5a74b3db592c9824929772c7"
 }
 
 class ApiEndPoints{

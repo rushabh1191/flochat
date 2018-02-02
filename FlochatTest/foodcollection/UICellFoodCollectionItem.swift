@@ -34,12 +34,13 @@ class UICellFoodCollectionItem: UITableViewCell {
         
         lblName.text=collection.collectionItem.title
         lblName.boldFont()
-    
+//        lblName.sizeToFit()
+    lblDescription.backgroundColor=AppColor.blueColor
+        lblName.backgroundColor=AppColor.orangeColor
         ivImage.sd_setImage(with: URL(string: collection.collectionItem.imageUrl!), placeholderImage: nil)
 
         lblDescription.text=collection.collectionItem.description.trim()
-//        lblDescription.sizeToFit()
-//        lblDescription.layoutIfNeeded()
+     
     }
     
     
