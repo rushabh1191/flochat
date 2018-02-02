@@ -1,18 +1,4 @@
 {
-	"collections": [{
-		"collection": {
-			"collection_id": 1,
-			"res_count": 30,
-			"image_url": "https://b.zmtcdn.com/data/collections/e140962ec7eecbb851155fe0bb0cd28c_1463395649.jpg",
-			"url": "https://www.zomato.com/ahmedabad/top-restaurants?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
-			"title": "Trending this week",
-			"description": "The most popular restaurants in town this week",
-			"share_url": "http://www.zoma.to/c-1/1"
-		}
-	}],
-	"has_more": 0,
-	"share_url": "http://www.zoma.to/c-1",
-	"display_text": "OR EXPLORE OUR COLLECTIONS",
-	"has_total": 0
-
+  "id": 1,
+  "title": "hello"
 }
