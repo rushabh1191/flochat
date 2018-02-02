@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import SDWebImage
 
 class UICellFoodCollectionItem: UITableViewCell {
 
+    @IBOutlet weak var lblDescription: UILabel!
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var ivImage: UIImageView!
+    static let height:CGFloat=110
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +25,22 @@ class UICellFoodCollectionItem: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.lblDescription.text=nil
+    }
+    func showData(collection:Collection){
+        lblName.text=collection.collectionItem.title
+        lblName.boldFont()
+        
+        ivImage.sd_setImage(with: URL(string: collection.collectionItem.imageUrl!), placeholderImage: nil)
+
+        lblDescription.text=collection.collectionItem.description.trim()
+        lblDescription.sizeToFit()
+        lblDescription.layoutIfNeeded()
+        lblDescription.adjustsFontSizeToFitWidth = true
+    }
+    
     
 }

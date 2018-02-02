@@ -16,9 +16,8 @@ import ObjectMapper
 
 class EndPoint{
 
-    static let appUrl="http://35.154.75.20:9090/"
-    static let foodItems="test/ios"
-
+    static let appUrl="https://api.myjson.com/bins/"
+    static let foodItems="9wn11"
 }
 
 class ApiEndPoints{
@@ -65,7 +64,7 @@ class ApiCall{
     func prepareRequestData(url:String)->(headers:[String:String],url:String){
         let url=(EndPoint.appUrl+url).encodeUrl()
     
-        return (headers:["Authorization":"Bearer FlochatIosTestApi"],url:url);
+        return (headers:[:],url:url);
         
     }
 }

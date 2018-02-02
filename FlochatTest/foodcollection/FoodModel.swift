@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 class FoodModel:Mappable{
     
-    var collection:Collection!
+    var collection:Array<Collection>!
     
     required init?(map: Map) {
         mapping(map: map)
@@ -21,7 +21,7 @@ class FoodModel:Mappable{
     }
 }
 class Collection:Mappable{
-    var collectionItem:Array<CollectionItem>=[]
+    var collectionItem:CollectionItem!
     
     required init?(map: Map) {
         mapping(map: map)

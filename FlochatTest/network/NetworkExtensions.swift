@@ -37,6 +37,7 @@ extension ObservableType{
                     json=["message":d.1]
                 }else{
                     json = d.1 as! [String:Any]
+                    print(json)
                 }
                 
                     guard let object = Mapper<T>().map(JSON:json)else {

@@ -10,7 +10,7 @@ import UIKit
 
 class UIListOfFoodCollection: UIViewController,UITableViewDataSource,UITableViewDelegate {
     @IBOutlet weak var tblFoodColllection: UITableView!
-    var listOfFoodModel:Array<CollectionItem>=[]
+    var listOfFoodModel:Array<Collection>=[]
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,16 +18,17 @@ class UIListOfFoodCollection: UIViewController,UITableViewDataSource,UITableView
         
         tblFoodColllection.dataSource=self
         tblFoodColllection.delegate=self
-
+self.tblFoodColllection.estimatedRowHeight = UICellFoodCollectionItem.height;
         self.fetchItems()
         // Do any additional setup after loading the view.
     }
+
 
     func fetchItems(){
         self.showProgressIndicator()
         apiEndPoints.fetchFoodItems().subscribe(onNext: { (foodCollection) in
             self.hideProgressIndicator()
-            self.listOfFoodModel.append(contentsOf: foodCollection.collection.collectionItem)
+            self.listOfFoodModel.append(contentsOf: foodCollection.collection)
             self.tblFoodColllection.reloadData()
         }, onError: { (error) in
             self.handlerError(error: error)
@@ -44,9 +45,14 @@ class UIListOfFoodCollection: UIViewController,UITableViewDataSource,UITableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listOfFoodModel.count
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell=tableView.dequeueReusableCell(withIdentifier: UICellFoodCollectionItem.getClassName(), for: indexPath) as! UICellFoodCollectionItem
+        
+        cell.showData(collection: listOfFoodModel[indexPath.item])
         return cell
     }
     override func didReceiveMemoryWarning() {
