@@ -17,6 +17,7 @@ class UICellFoodCollectionItem: UITableViewCell {
     static let height:CGFloat=110
     override func awakeFromNib() {
         super.awakeFromNib()
+//        self.contentView.superview?.addConstraint(NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.greaterThanOrEqual, toItem: self, attribute: NSLayoutAttribute.height, multiplier: 1, constant: 110))
         // Initialization code
     }
 
@@ -28,18 +29,17 @@ class UICellFoodCollectionItem: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        self.lblDescription.text=nil
     }
     func showData(collection:Collection){
+        
         lblName.text=collection.collectionItem.title
         lblName.boldFont()
-        
+    
         ivImage.sd_setImage(with: URL(string: collection.collectionItem.imageUrl!), placeholderImage: nil)
 
         lblDescription.text=collection.collectionItem.description.trim()
-        lblDescription.sizeToFit()
-        lblDescription.layoutIfNeeded()
-        lblDescription.adjustsFontSizeToFitWidth = true
+//        lblDescription.sizeToFit()
+//        lblDescription.layoutIfNeeded()
     }
     
     

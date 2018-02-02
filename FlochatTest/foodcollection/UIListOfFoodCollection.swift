@@ -18,7 +18,6 @@ class UIListOfFoodCollection: UIViewController,UITableViewDataSource,UITableView
         
         tblFoodColllection.dataSource=self
         tblFoodColllection.delegate=self
-self.tblFoodColllection.estimatedRowHeight = UICellFoodCollectionItem.height;
         self.fetchItems()
         // Do any additional setup after loading the view.
     }
