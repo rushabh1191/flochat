@@ -1,11 +1,338 @@
 {
-	"posts": [{
-			"id": 1,
-			"title": "Post 1"
-		},
-		{
-			"id": 2,
-			"title": "Post 2"
-		}
-	]
-}
+      "collections": [
+        {
+          "collection": {
+            "collection_id": 1,
+            "res_count": 30,
+            "image_url": "https://b.zmtcdn.com/data/collections/e140962ec7eecbb851155fe0bb0cd28c_1463395649.jpg",
+            "url": "https://www.zomato.com/ahmedabad/top-restaurants?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Trending this week",
+            "description": "The most popular restaurants in town this week",
+            "share_url": "http://www.zoma.to/c-1/1"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 390,
+            "res_count": 30,
+            "image_url": "https://b.zmtcdn.com/data/collections/a6c9f1a4f5c6cd03974d44ec13b1586d_1485941962.jpg",
+            "url": "https://www.zomato.com/ahmedabad/valentines-day-specials?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Valentine&#039;s day",
+            "description": "Whether it's to show yourself or your special someone some love, here are some of the best restaurants to celebrate the day of hearts",
+            "share_url": "http://www.zoma.to/c-1/390"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 29,
+            "res_count": 53,
+            "image_url": "https://b.zmtcdn.com/data/collections/b8499c7a6b74ddf01497ac8afc86d2e2_1476701306.jpg",
+            "url": "https://www.zomato.com/ahmedabad/best-new-restaurants?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Newly opened",
+            "description": "The best new places in town",
+            "share_url": "http://www.zoma.to/c-1/29"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 225829,
+            "res_count": 42,
+            "image_url": "https://b.zmtcdn.com/data/collections/082b251d4a746ad9d49fd48db341a435_1485776035.jpg",
+            "url": "https://www.zomato.com/ahmedabad/delhi-cocktail-week?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Delhi Cocktail Week",
+            "description": "Come enjoy the widest variety of cocktails with these restaurants which are celebrating the Delhi Cocktail Week",
+            "share_url": "http://www.zoma.to/c-1/225829"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 225,
+            "res_count": 68,
+            "image_url": "https://b.zmtcdn.com/data/collections/3eeb8a5d63844348a56f85c8db028418_1443673408_l.jpg",
+            "url": "https://www.zomato.com/ahmedabad/fine-dining-restaurants?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Luxury dining",
+            "description": "The best restaurants in town for a complete fine-dining experience.",
+            "share_url": "http://www.zoma.to/c-1/225"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 339,
+            "res_count": 12,
+            "image_url": "https://b.zmtcdn.com/data/collections/8c42959a434bd9cabf283ac56872c996_1463635734.jpg",
+            "url": "https://www.zomato.com/ahmedabad/happy-hours?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Happy hours",
+            "description": "Great deals on booze. Happy hours indeed",
+            "share_url": "http://www.zoma.to/c-1/339"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 340,
+            "res_count": 9,
+            "image_url": "https://b.zmtcdn.com/data/collections/5ae77acfc2f3d7a9c7cc2dbf4ba6aecd_1421659018_l.jpg",
+            "url": "https://www.zomato.com/ahmedabad/cheap-bars?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Pocket friendly bars",
+            "description": "The best and most affordable booze your city has to offer ",
+            "share_url": "http://www.zoma.to/c-1/340"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 17,
+            "res_count": 9,
+            "image_url": "https://b.zmtcdn.com/data/collections/b2a9346ab0f03785350b96d983841902_1463635759.jpg",
+            "url": "https://www.zomato.com/ahmedabad/shisha?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Sheesha lounges",
+            "description": "Enjoy a great selection of sheesha",
+            "share_url": "http://www.zoma.to/c-1/17"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 322,
+            "res_count": 26,
+            "image_url": "https://b.zmtcdn.com/data/collections/9d736245708add4541c7f8e90e6d7e14_1486018751.jpg",
+            "url": "https://www.zomato.com/ahmedabad/south-indian-restaurants?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "South Indian delights",
+            "description": "A slice of the South, right here in your city. Dosas, appams, idlis and so much more.",
+            "share_url": "http://www.zoma.to/c-1/322"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 277,
+            "res_count": 23,
+            "image_url": "https://b.zmtcdn.com/data/collections/5df054585bcc09b8ea426a7c6963f874_1463723941.jpg",
+            "url": "https://www.zomato.com/ahmedabad/best-buffet?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Great buffets",
+            "description": "Eat to your heart's content",
+            "share_url": "http://www.zoma.to/c-1/277"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 202375,
+            "res_count": 14,
+            "image_url": "https://b.zmtcdn.com/data/collections/3de606c4e8cfd8e275936c50ae1ba7f3_1480314164.jpg",
+            "url": "https://www.zomato.com/ahmedabad/icici-bank-culinary-treats?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "ICICI Bank Culinary Treats",
+            "description": "Now find your favorite restaurants with offers on ICICI Bank cards",
+            "share_url": "http://www.zoma.to/c-1/202375"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 9,
+            "res_count": 28,
+            "image_url": "https://b.zmtcdn.com/data/collections/ac0c18ac3c3956269e6a38c7081f9ef1_1470476332.jpg",
+            "url": "https://www.zomato.com/ahmedabad/microbreweries?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Microbreweries",
+            "description": "For the times when bottled brews just do not cut it",
+            "share_url": "http://www.zoma.to/c-1/9"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 2,
+            "res_count": 34,
+            "image_url": "https://b.zmtcdn.com/data/collections/213094197d171cb9ca214724fcb63abe_1455262413.jpg",
+            "url": "https://www.zomato.com/ahmedabad/sunday-brunch?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Sunday brunches",
+            "description": "Just about the perfect way to end the week",
+            "share_url": "http://www.zoma.to/c-1/2"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 3,
+            "res_count": 26,
+            "image_url": "https://b.zmtcdn.com/data/collections/8c2611e9f177b47ba905367af063b6f7_1463726322.jpg",
+            "url": "https://www.zomato.com/ahmedabad/romantic-restaurants?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Romantic",
+            "description": "The perfect spots for a romantic meal",
+            "share_url": "http://www.zoma.to/c-1/3"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 55,
+            "res_count": 26,
+            "image_url": "https://b.zmtcdn.com/data/collections/13705ddccd734513764d67858134bf05_1427096182_l.jpg",
+            "url": "https://www.zomato.com/ahmedabad/live-music-restaurants?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Live music",
+            "description": "The best live music venues in town",
+            "share_url": "http://www.zoma.to/c-1/55"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 13,
+            "res_count": 32,
+            "image_url": "https://b.zmtcdn.com/data/collections/54fdeccf0c51141023dd0d58356aec2a_1467631167.jpg",
+            "url": "https://www.zomato.com/ahmedabad/rooftop-restaurants?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Rooftops",
+            "description": "Dine like you're on top of the world",
+            "share_url": "http://www.zoma.to/c-1/13"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 4,
+            "res_count": 22,
+            "image_url": "https://b.zmtcdn.com/data/collections/4c2b30d63f25fc4d52a220890442421a_1421300685_l.jpg",
+            "url": "https://www.zomato.com/ahmedabad/outdoor-dining?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Outdoor seating",
+            "description": "The most idyllic outdoor-dining spots in the city",
+            "share_url": "http://www.zoma.to/c-1/4"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 5,
+            "res_count": 46,
+            "image_url": "https://b.zmtcdn.com/data/collections/e566832632d10b1e50c954cb951edd11_1432274741_l.jpg",
+            "url": "https://www.zomato.com/ahmedabad/best-burger?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Kickass burgers",
+            "description": "The cheesiest, healthiest, or meatiest - your pick",
+            "share_url": "http://www.zoma.to/c-1/5"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 321,
+            "res_count": 35,
+            "image_url": "https://b.zmtcdn.com/data/collections/d54df30563212e846bf79dd1ba0f1de4_1429783305_l.jpg",
+            "url": "https://www.zomato.com/ahmedabad/pizza-restaurants?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Pizza time",
+            "description": "Meaty, cheesy, delicious. Just about the perfect food",
+            "share_url": "http://www.zoma.to/c-1/321"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 58,
+            "res_count": 39,
+            "image_url": "https://b.zmtcdn.com/data/collections/8293079b406af27a094dd4cdc41a2fb7_1418390791_l.jpg",
+            "url": "https://www.zomato.com/ahmedabad/asian-restaurants?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Pan-Asian delicacies",
+            "description": "The best places for Asian fare",
+            "share_url": "http://www.zoma.to/c-1/58"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 75,
+            "res_count": 56,
+            "image_url": "https://b.zmtcdn.com/data/collections/f9d822284b336c1eb8c3af8c42216389_1460023238.jpg",
+            "url": "https://www.zomato.com/ahmedabad/best-bars-and-pubs?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Best bars &amp; pubs",
+            "description": "The top places to enjoy a drink",
+            "share_url": "http://www.zoma.to/c-1/75"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 74,
+            "res_count": 31,
+            "image_url": "https://b.zmtcdn.com/data/collections/1cdf72ec3e6c449d0759d1fa5a4d0c4d_1464322814.jpg",
+            "url": "https://www.zomato.com/ahmedabad/night-clubs?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Where&#039;s the party?",
+            "description": "Put on your dancing shoes and let your hair down",
+            "share_url": "http://www.zoma.to/c-1/74"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 78,
+            "res_count": 22,
+            "image_url": "https://b.zmtcdn.com/data/collections/7d78f516cf561c362481f1d7a1fc7464_1418393872_l.jpg",
+            "url": "https://www.zomato.com/ahmedabad/butter-chicken?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Butter chicken",
+            "description": "A food better than butter chicken? There is naan",
+            "share_url": "http://www.zoma.to/c-1/78"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 105,
+            "res_count": 23,
+            "image_url": "https://b.zmtcdn.com/data/collections/b360e64865984b3d06f5b68486acb2bd_1485857174.jpg",
+            "url": "https://www.zomato.com/ahmedabad/girls-night?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Girls&#039; night out",
+            "description": "The best spots for a girls' \"night out on the town\"",
+            "share_url": "http://www.zoma.to/c-1/105"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 71343,
+            "res_count": 28,
+            "image_url": "https://b.zmtcdn.com/data/collections/cfb712d694544ccca49495b7a81c7d7f_1475836977.jpg",
+            "url": "https://www.zomato.com/ahmedabad/insta-worthy-places?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Insta-worthy",
+            "description": "Insta-perfect places for your next hashtag filled food adventures.",
+            "share_url": "http://www.zoma.to/c-1/71343"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 7,
+            "res_count": 23,
+            "image_url": "https://b.zmtcdn.com/data/collections/0a765bdc61f3054f4e97f406e561b63f_1418391127_l.jpg",
+            "url": "https://www.zomato.com/ahmedabad/legendary-places?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Legendary outlets",
+            "description": "They say old is gold and here's the proof",
+            "share_url": "http://www.zoma.to/c-1/7"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 183,
+            "res_count": 24,
+            "image_url": "https://b.zmtcdn.com/data/collections/fe80e560421fcaea5ba5fc83d5289562_1459586727.jpg",
+            "url": "https://www.zomato.com/ahmedabad/late-night-delivery?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Late night delivery",
+            "description": "For those crazy, late night hunger pangs",
+            "share_url": "http://www.zoma.to/c-1/183"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 51,
+            "res_count": 27,
+            "image_url": "https://b.zmtcdn.com/data/collections/81dc179878a8d9e8b2ab03e4eaeab0df_1459434256.jpg",
+            "url": "https://www.zomato.com/ahmedabad/biryani?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Brilliant biryanis",
+            "description": "Hyderabadi, Kolkata, Lucknawi...the choice is yours",
+            "share_url": "http://www.zoma.to/c-1/51"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 19,
+            "res_count": 40,
+            "image_url": "https://b.zmtcdn.com/data/collections/7dcd65d161813057e74cfaf2903c28fe_1444656532_l.jpg",
+            "url": "https://www.zomato.com/ahmedabad/vegetarian-restaurants?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Veggie friendly",
+            "description": "Restaurants serving the best vegetarian fare",
+            "share_url": "http://www.zoma.to/c-1/19"
+          }
+        },
+        {
+          "collection": {
+            "collection_id": 63964,
+            "res_count": 12,
+            "image_url": "https://b.zmtcdn.com/data/collections/54fb5f1ec052d3837430af3342d18868_1463722615.jpg",
+            "url": "https://www.zomato.com/ahmedabad/custom-cakes?utm_source=OUWT&utm_medium=api&utm_campaign=v2.1",
+            "title": "Custom bakes",
+            "description": "Delicious desserts made to order for every kind of celebration",
+            "share_url": "http://www.zoma.to/c-1/63964"
+          }
+        }
+      ],
+      "has_more": 0,
+      "share_url": "http://www.zoma.to/c-1",
+      "display_text": "OR EXPLORE OUR COLLECTIONS",
+      "has_total": 0
+    }
