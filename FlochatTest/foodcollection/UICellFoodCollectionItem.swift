@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import HTMLString
 
 class UICellFoodCollectionItem: UITableViewCell {
 
@@ -31,12 +32,9 @@ class UICellFoodCollectionItem: UITableViewCell {
         super.prepareForReuse()
     }
     func showData(collection:Collection){
-        
-        lblName.text=collection.collectionItem.title
         lblName.boldFont()
-//        lblName.sizeToFit()
-//    lblDescription.backgroundColor=AppColor.blueColor
-//        lblName.backgroundColor=AppColor.orangeColor
+        
+        lblName.text = collection.collectionItem.title.removingHTMLEntities
         ivImage.sd_setImage(with: URL(string: collection.collectionItem.imageUrl!), placeholderImage: nil)
 self.selectionStyle = .none
         lblDescription.text=collection.collectionItem.description.trim()

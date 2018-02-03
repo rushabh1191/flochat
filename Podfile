@@ -10,4 +10,5 @@ pod 'AlamofireObjectMapper', '~> 5.0'
     pod 'RxAlamofire'
     pod 'DZNEmptyDataSet'
     pod 'SDWebImage', '~> 4.0'
+    pod 'HTMLString', '~> 4.0'
 end

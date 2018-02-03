@@ -40,6 +40,8 @@ class CollectionItem:Mappable{
     var description:String!
     var shareUrl:String!
     
+    var attributedTitle:NSAttributedString!
+    
     required init?(map: Map) {
         mapping(map: map)
     }
@@ -51,6 +53,6 @@ class CollectionItem:Mappable{
         url<-map["url"]
         title<-map["title"]
         description<-map["description"]
-        shareUrl<-map["shareUrl"]
+        shareUrl<-map["shareUrl"]        
     }
 }
