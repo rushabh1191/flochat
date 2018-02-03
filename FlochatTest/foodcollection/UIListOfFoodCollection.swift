@@ -13,15 +13,55 @@ class UIListOfFoodCollection: UIViewController,UITableViewDataSource,UITableView
     var listOfFoodModel:Array<Collection>=[]
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tblFoodColllection.registerCell(type: UICellFoodCollectionItem.self)
         
         tblFoodColllection.dataSource=self
         tblFoodColllection.delegate=self
-        self.fetchItems()
-        // Do any additional setup after loading the view.
+        
+        self.navigationItem.title="Flochat"
+        
+        if((sessionManager?.isUserLoggedIn())!){
+            self.fetchItems()
+        }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.userLoggedIn),
+                                               name: NSNotification.Name(rawValue: ViewController.USER_LOGGED_IN),
+                                               object: nil)
+        let rightBar=UIBarButtonItem(title: "Logout", style: UIBarButtonItemStyle.plain, target: self, action: #selector(logout))
+        self.navigationItem.rightBarButtonItem=rightBar
+    
     }
 
+    @objc func logout(){
+        
+        let logoutAction=UIAlertAction(title: "Logout", style: UIAlertActionStyle.destructive) { (alertAction) in
+            self.listOfFoodModel.removeAll()
+            self.tblFoodColllection.reloadData()
+            self.sessionManager?.setUserLoggedIn(isLoggedIn: false)
+            self.showLoginScreen()
+        }
+        let cancel=UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel)
+        
+        self.showAlert(message: "Are you sure you want to logout?", alertActions: cancel,logoutAction)
+        
+    }
+    
+    func showLoginScreen(){
+        let vc=loadVC(vcName: "login")
+        self.navigationController?.present(vc, animated: true, completion: nil)
+    }
+    @objc func userLoggedIn(){
+        if((sessionManager?.isUserLoggedIn())!){
+            self.fetchItems()
+        }
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        if(!(sessionManager?.isUserLoggedIn())!){
+           self.showLoginScreen()
+        }
+        
+    }
 
     func fetchItems(){
         self.showProgressIndicator()
@@ -63,6 +103,13 @@ class UIListOfFoodCollection: UIViewController,UITableViewDataSource,UITableView
     }
     
 
+    static func getVCWithNav()->UIViewController{
+        return UINavigationController(rootViewController: UIListOfFoodCollection())
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
     /*
     // MARK: - Navigation
 

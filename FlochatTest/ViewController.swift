@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     var isLogin:Bool=true
     
+    static let USER_LOGGED_IN="user_logged_in"
     let loginText="LOGIN"
     let signupText="SIGN-UP"
     @IBOutlet weak var btnChangeAction: UIButton!
@@ -57,8 +58,7 @@ class ViewController: UIViewController {
         
         if(validityInfo.isValid){
             let context=getCoreDataContext()
-            let userInfo=UserInfo(context: context)
-        
+    
             let fetchRequest:NSFetchRequest<UserInfo>=UserInfo.fetchRequest()
     
             print(validityInfo.username)
@@ -73,6 +73,9 @@ class ViewController: UIViewController {
                     let user=result[0]
                     if(user.password==validityInfo.password){
                         self.sessionManager?.setUserLoggedIn(isLoggedIn: true)
+                        NotificationCenter.default.post(name: NSNotification.Name(rawValue: ViewController.USER_LOGGED_IN), object: nil)
+                        self.dismiss(animated: true, completion: nil)
+                        
                     }else{
                         self.showAlert(message: "Password is invalid ")
                     }
@@ -137,7 +140,7 @@ class ViewController: UIViewController {
         }
         
     }
-    
+
     func setLoginAction(){
         isLogin=true
         btnAction.setTitle(loginText, for: UIControlState.normal)
