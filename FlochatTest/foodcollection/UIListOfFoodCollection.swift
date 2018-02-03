@@ -64,9 +64,9 @@ class UIListOfFoodCollection: UIViewController,UITableViewDataSource,UITableView
     }
 
     func fetchItems(){
-        self.showProgressIndicator()
+        self.showProgressIndicator(vc: self)
         apiEndPoints.fetchFoodItems().subscribe(onNext: { (foodCollection) in
-            self.hideProgressIndicator()
+            self.hideProgressIndicator(vc:self)
             self.listOfFoodModel.append(contentsOf: foodCollection.collection)
             self.tblFoodColllection.reloadData()
         }, onError: { (error) in

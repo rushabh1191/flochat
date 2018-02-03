@@ -60,8 +60,7 @@ class ViewController: UIViewController {
             let context=getCoreDataContext()
     
             let fetchRequest:NSFetchRequest<UserInfo>=UserInfo.fetchRequest()
-    
-            print(validityInfo.username)
+
             
             fetchRequest.predicate=NSPredicate(format: "username==%@", validityInfo.username)
             fetchRequest.fetchLimit=1
@@ -72,9 +71,7 @@ class ViewController: UIViewController {
                 }else{
                     let user=result[0]
                     if(user.password==validityInfo.password){
-                        self.sessionManager?.setUserLoggedIn(isLoggedIn: true)
-                        NotificationCenter.default.post(name: NSNotification.Name(rawValue: ViewController.USER_LOGGED_IN), object: nil)
-                        self.dismiss(animated: true, completion: nil)
+                        loginUserWithSession()
                         
                     }else{
                         self.showAlert(message: "Password is invalid ")
@@ -88,6 +85,12 @@ class ViewController: UIViewController {
     
 
         
+    }
+    
+    func loginUserWithSession(){
+        self.sessionManager?.setUserLoggedIn(isLoggedIn: true)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: ViewController.USER_LOGGED_IN), object: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     func isValid()->(isValid:Bool,username:String,password:String){
@@ -119,7 +122,7 @@ class ViewController: UIViewController {
         
             do{
                     try context.save()
-                showAlert(message: "User registered")
+                loginUserWithSession()
             }catch{
                 // assuming error for test
                 showAlert(message: "User already exist")
