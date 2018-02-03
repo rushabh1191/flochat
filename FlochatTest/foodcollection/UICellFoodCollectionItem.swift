@@ -14,7 +14,7 @@ class UICellFoodCollectionItem: UITableViewCell {
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var ivImage: UIImageView!
-    static let height:CGFloat=110
+    static let height:CGFloat=100
     override func awakeFromNib() {
         super.awakeFromNib()
 //        self.contentView.superview?.addConstraint(NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.greaterThanOrEqual, toItem: self, attribute: NSLayoutAttribute.height, multiplier: 1, constant: 110))
@@ -35,10 +35,10 @@ class UICellFoodCollectionItem: UITableViewCell {
         lblName.text=collection.collectionItem.title
         lblName.boldFont()
 //        lblName.sizeToFit()
-    lblDescription.backgroundColor=AppColor.blueColor
-        lblName.backgroundColor=AppColor.orangeColor
+//    lblDescription.backgroundColor=AppColor.blueColor
+//        lblName.backgroundColor=AppColor.orangeColor
         ivImage.sd_setImage(with: URL(string: collection.collectionItem.imageUrl!), placeholderImage: nil)
-
+self.selectionStyle = .none
         lblDescription.text=collection.collectionItem.description.trim()
      
     }
